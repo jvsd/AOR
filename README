@@ -1,0 +1,19 @@
+# ABSTRACT
+
+# DEPENDENCIES
+- numpy
+- matplotlib
+- sklearn
+- opencv
+- Image
+
+#DESCRIPTION
+
+-ValidationData.py gets the true dataset for an image
+-Error.py will train the SVM and validate according to datavalid.npy
+-Demo.py takes an input image to find targets
+
+#TO-DO
+-Currently is only trained on 1 target type
+-Change in scale
+-Normalise Image
