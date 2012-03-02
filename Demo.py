@@ -127,7 +127,7 @@ fullimagec = cv.LoadImage(fullimageinput, cv.CV_LOAD_IMAGE_UNCHANGED)
 point = [None]*len(keypoints)
 for i in range(0,len(keypoints)-1):
     point[i] = keypoints[i][0]
-    cv.Circle(fullimagec,(point[i][0],point[i][1]),35,(0,0,255,0),1,8,0) 
+    cv.Circle(fullimagec,(int(point[i][0]),int(point[i][1])),35,(0,0,255,0),1,8,0) 
     tempx = point[i][0]
     tempy = point[i][1]
     
@@ -152,7 +152,7 @@ print 'here'
 for i in range(0,len(point)-1):
         print point
         cropped[i] = cv.CreateImage((400,400) , cv.IPL_DEPTH_8U, 3)
-        cv.SetImageROI(fullimagec,(point[i][0],point[i][1],400,400))
+        cv.SetImageROI(fullimagec,(int(point[i][0]),int(point[i][1]),400,400))
         cv.Copy(fullimagec,cropped[i], None)
         cv.ResetImageROI(fullimagec)
         cv.ShowImage("Test",cropped[i])

@@ -5,8 +5,8 @@
 - numpy 1.6.1_1
 - matplotlib 1.1.0_2
 - scikits 0.10_0
-- opencv 2.3.1a_1
-- Image
+- opencv 2.3.1a_2
+- PIL 1.1.7_4
 
 #DESCRIPTION
 
