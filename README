@@ -1,4 +1,5 @@
 # ABSTRACT
+This is an attempt to extract targets with known size and features from aerial imagery using machine learning techniques. 
 
 # DEPENDENCIES
 - python 2.7.2_4
